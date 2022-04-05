@@ -1,0 +1,367 @@
+html{
+    text-align: center;
+    background-color: rgb(158, 255, 154);
+}
+
+
+.cont-temporizador{
+    display: flex;
+    justify-content: center;   
+    margin-top: 50px; 
+} 
+  
+.cont-temporizador .bloque{
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.cont-temporizador .bloque div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 6px 2px #ff00dd inset;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+.cont-temporizador .bloque p{
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.a1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 30px 60px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+  
+  .a1:before{
+    content: '';	
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.06);	
+  }
+  
+  /*---------- Borde 1(arriba) ------------*/
+  .a1 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #000000, #ff00f2);	
+    animation: borderTop 2s linear infinite;
+  }
+  
+  @keyframes borderTop{
+    0%{
+        transform: translateX(-100%);  
+    }
+    100%{
+        transform: translateX(100%);  
+    }
+  }
+  
+  /*---------- Borde 2(derecho) ------------*/
+  .a1 span:nth-child(2){
+    position: absolute;
+    top: 0;	
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #ff00ea);	
+    animation: borderLeft 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes borderLeft{
+    0%{
+        transform: translateY(-100%);  
+    }
+    100%{
+        transform: translateY(100%);  
+    }
+  }
+  
+  /*---------- Borde 3(abajo) ------------*/
+  .a1 span:nth-child(3){
+    position: absolute;
+    bottom: 0;	
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, #000000, #ff00ea);	
+    animation: borderBottom 2s linear infinite;
+  }
+  
+  @keyframes borderBottom{
+    0%{
+        transform: translateX(100%);  
+    }
+    100%{
+        transform: translateX(-100%);  
+    }
+  }
+  
+  /*---------- Borde 4(izquierdo) ------------*/
+  .a1 span:nth-child(4){
+    position: absolute;
+    top: 0;	
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, #ff00d4, #000000);	
+    animation: borderRight 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes borderRight{
+    0%{
+        transform: translateY(100%);  
+    }
+    100%{
+        transform: translateY(-100%);  
+    }
+  }
+
+  top{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  foto{
+    display: flex;
+    justify-content: left;
+    margin-top: 160px; 
+  }
+
+  fotobotas{
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+  
+    }
+    
+    .MERCURIAL{
+    font-size: 28px;
+    }
+    
+    .desde{
+    display: flex;
+    font-size: small;
+    }
+    
+    .botas{
+    text-align: left;
+    }
+    
+    .botas1{
+    text-align: left;
+    font-size: 20px;
+    }
+
+  
+
+  .a2{  
+    margin-left: -40px;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    background-color: #b38300;
+    color: #3f120c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 36px;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+
+  fotocamiseta{
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+  }
+
+  .cajaimg{
+    margin-right: -3%;
+  }
+
+ 
+
+  .desde1{
+    text-align: right;
+    font-size: small;
+  }
+
+
+  .camiseta{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+ 
+  }
+
+  .camiseta1{
+    display: flex;
+  
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .a3{
+    
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    background-color: #b38300;
+    color: #3f120c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 36px;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+
+
+  fotopanta{
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+  
+    }
+    
+    .Pantalon{
+    font-size: 28px;
+    }
+    
+    .desde2{
+    display: flex;
+    font-size: small;
+    }
+    
+    .Pantalon{
+    text-align: left;
+    }
+    
+    .pantalon1{
+    text-align: left;
+    font-size: 20px;
+    }
+
+  
+
+  .a4{  
+    margin-left: -40px;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    background-color: #b38300;
+    color: #3f120c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 36px;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+
+
+
+  fotogorra{
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+  }
+
+  .cajaimg{
+    margin-right: -3%;
+  }
+
+ 
+
+  .desde3{
+    text-align: right;
+    font-size: small;
+  }
+
+
+  .gorra{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+ 
+  }
+
+  .gorra1{
+    display: flex;
+  
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .a5{
+    
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    background-color: #b38300;
+    color: #3f120c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 36px;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+
+
+
+  #promocion{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    height: 250px;
+    background-image: linear-gradient(to bottom, #000000 0%, #ffffff 100%);
+    }
+
+
+    .promo2{
+      font-size: 30px;
+      justify-content: center;
+      margin: auto;
+      }
+      
+      .promo3{
+      position: absolute;
+      margin-left: 35%;
+      margin-top: 6%;
+      font-size: 25px;
+      }
+      
+      .a6{
+      position: absolute;
+      margin-left: 52%;
+      margin-top: 28%;
+      transform: translate(-50%,-50%);
+      font-size: 22px;
+      background-color: #b38300;
+      color: #3f120c;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 18px 36px;
+      box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+      }
